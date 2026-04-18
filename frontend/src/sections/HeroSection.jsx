@@ -5,6 +5,7 @@ import AnimatedButton from '../components/AnimatedButton';
 import Reveal from '../components/Reveal';
 import TravelSearchWidget from '../components/search/TravelSearchWidget';
 import { defaultFlightSearch, defaultHotelSearch } from '../assets/mockData';
+import heroBackground from '../assets/hero_background.png';
 
 function HeroSection() {
   const navigate = useNavigate();
@@ -21,7 +22,11 @@ function HeroSection() {
 
   return (
     <section id="home" className="relative overflow-hidden px-4 pb-16 pt-6 lg:px-8 lg:pb-24 lg:pt-12">
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.24),transparent_28%),radial-gradient(circle_at_top_right,rgba(14,165,233,0.18),transparent_24%),linear-gradient(180deg,#e0f2fe_0%,#f8fdff_36%,#ffffff_100%)]" />
+      <div 
+        className="absolute inset-0 -z-20 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      />
+      <div className="absolute inset-0 -z-10 bg-white/70 bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.15),transparent_28%),radial-gradient(circle_at_top_right,rgba(14,165,233,0.1),transparent_24%),linear-gradient(180deg,rgba(255,255,255,0.4)_0%,rgba(248,253,255,0.8)_36%,#ffffff_100%)]" />
       <motion.div
         animate={{ x: [0, 28, 0], y: [0, -18, 0] }}
         transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
