@@ -1,0 +1,16 @@
+{
+  "name": "travel-agency-platform",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:frontend": "npm run dev --workspace frontend",
+    "dev:backend": "npm run dev --workspace backend",
+    "build": "npm run build --workspace frontend && npm run build --workspace backend",
+    "preview": "npm run preview --workspace frontend",
+    "start": "npm run start --workspace backend"
+  }
+}
