@@ -5,7 +5,7 @@ import AnimatedButton from '../components/AnimatedButton';
 import Reveal from '../components/Reveal';
 import TravelSearchWidget from '../components/search/TravelSearchWidget';
 import { defaultFlightSearch, defaultHotelSearch } from '../assets/mockData';
-import heroBackground from '../assets/hero_background.png';
+import heroBackground from '../assets/uae_airplane_hq.png';
 
 function HeroSection() {
   const navigate = useNavigate();
@@ -22,11 +22,13 @@ function HeroSection() {
 
   return (
     <section id="home" className="relative overflow-hidden px-4 pb-16 pt-6 lg:px-8 lg:pb-24 lg:pt-12">
+      {/* Background Image Layer */}
       <div 
-        className="absolute inset-0 -z-20 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBackground})` }}
       />
-      <div className="absolute inset-0 -z-10 bg-white/70 bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.15),transparent_28%),radial-gradient(circle_at_top_right,rgba(14,165,233,0.1),transparent_24%),linear-gradient(180deg,rgba(255,255,255,0.4)_0%,rgba(248,253,255,0.8)_36%,#ffffff_100%)]" />
+      {/* Overlay to ensure text readability */}
+      <div className="absolute inset-0 z-0 bg-white/60 bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.1),transparent_28%),radial-gradient(circle_at_top_right,rgba(14,165,233,0.05),transparent_24%),linear-gradient(180deg,rgba(255,255,255,0.1)_0%,rgba(240,250,255,0.4)_50%,rgba(255,255,255,0.8)_100%)]" />
       <motion.div
         animate={{ x: [0, 28, 0], y: [0, -18, 0] }}
         transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
@@ -35,10 +37,10 @@ function HeroSection() {
       <motion.div
         animate={{ x: [0, -22, 0], y: [0, 22, 0] }}
         transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut' }}
-        className="pointer-events-none absolute left-[-4rem] top-72 h-52 w-52 rounded-full bg-cyan-100/80 blur-3xl"
+        className="pointer-events-none absolute left-[-4rem] top-72 z-0 h-52 w-52 rounded-full bg-cyan-100/80 blur-3xl"
       />
 
-      <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start lg:gap-10">
+      <div className="relative z-10 mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start lg:gap-10">
         <div className="min-w-0 pt-2 lg:pt-10">
           <Reveal>
             <div className="inline-flex max-w-full flex-wrap items-center gap-2 rounded-full border border-sky-200 bg-white px-3 py-2 text-xs font-semibold text-sky-700 shadow-sm sm:px-4 sm:text-sm">
