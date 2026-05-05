@@ -30,7 +30,7 @@ function Navbar() {
         <a href={withHomePrefix('#home')} className="flex items-center gap-3 text-slate-950">
           <OrbitrueSealLogo compact />
           <span className="hidden sm:block">
-            <span className="block text-lg font-extrabold tracking-[0.14em] text-primary">ORBITRUE</span>
+            <span className="block text-lg font-extrabold tracking-[0.08em] text-primary">ORBITRUE TOURS & TRAVELS</span>
             <span className="block text-xs uppercase tracking-[0.26em] text-slate-500">Travel & Visa</span>
           </span>
         </a>

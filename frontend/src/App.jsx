@@ -8,7 +8,9 @@ import HotelsPage from './pages/HotelsPage';
 import PackagesPage from './pages/PackagesPage';
 import PackageDetailsPage from './pages/PackageDetailsPage';
 import VisaServicesPage from './pages/VisaServicesPage';
+import EnquiryPage from './pages/EnquiryPage';
 import ContactPage from './pages/ContactPage';
+import DestinationPage from './pages/DestinationPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import BookingPage from './pages/BookingPage';
@@ -25,7 +27,9 @@ function App() {
         <Route path="/hotels" element={<HotelsPage />} />
         <Route path="/packages" element={<PackagesPage />} />
         <Route path="/packages/:slug" element={<PackageDetailsPage />} />
+        <Route path="/destinations/:slug" element={<DestinationPage />} />
         <Route path="/visa-services" element={<VisaServicesPage />} />
+        <Route path="/enquiry" element={<EnquiryPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />

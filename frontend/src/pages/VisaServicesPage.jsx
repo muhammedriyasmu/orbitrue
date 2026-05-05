@@ -16,8 +16,8 @@ function VisaServicesPage() {
         {serviceCards.map((service) => (
           <article key={service.slug} className="glass-card overflow-hidden p-6">
             <div className="flex items-start gap-4">
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-500/15 text-cyan-100">
-                <service.icon />
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-sky-50 text-sky-700">
+                <service.icon className="h-6 w-6" />
               </div>
               <div>
                 <h2 className="text-2xl font-semibold text-slate-900">{service.title}</h2>
@@ -26,11 +26,11 @@ function VisaServicesPage() {
             </div>
             <p className="mt-5 text-sm leading-7 text-slate-600">{service.overview}</p>
             <div className="mt-6 flex gap-3">
-              <Link to={`/services/${service.slug}`} className="secondary-button">
-                Learn More
+              <Link to={`/enquiry?service=${service.slug}`} className="secondary-button">
+                Enquire Now
               </Link>
-              <Link to="/contact" className="primary-button">
-                Contact Us
+              <Link to={`/enquiry?service=${service.slug}`} className="primary-button">
+                Send Enquiry
               </Link>
             </div>
           </article>

@@ -11,7 +11,7 @@ function ServicesSection() {
         <SectionHeading
           badge="Travel tools"
           title="Travel services designed for smoother journeys and smarter planning"
-          description="Flight booking, hotel coordination, visa preparation, and work-travel support presented in a lighter, more product-like layout."
+          description="Flight booking, hotel coordination, visa assistance, and work-travel support presented in a lighter, more product-like layout."
         />
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {serviceCards.slice(0, 4).map((service, index) => (
@@ -21,7 +21,7 @@ function ServicesSection() {
                 transition={{ type: 'spring', stiffness: 240, damping: 20 }}
                 className="group h-full overflow-hidden rounded-[2rem] border border-sky-100 bg-white p-6 shadow-[0_16px_40px_rgba(15,23,42,0.06)]"
               >
-                <Link to={`/services/${service.slug}`} className="block h-full">
+                <Link to={`/enquiry?service=${service.slug}`} className="block h-full">
                   <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-sky-50 text-sky-700 transition group-hover:bg-primary group-hover:text-white">
                     <service.icon className="h-6 w-6" />
                   </div>

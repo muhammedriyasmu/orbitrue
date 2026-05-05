@@ -25,7 +25,7 @@ function Navbar() {
             <Plane size={20} />
           </div>
           <div className="min-w-0">
-            <p className="truncate text-lg font-semibold tracking-tight text-slate-900">Orbitrue</p>
+            <p className="truncate text-lg font-semibold tracking-tight text-slate-900">Orbitrue Tours & Travels</p>
             <p className="max-w-[10rem] text-[10px] uppercase tracking-[0.18em] text-slate-500 sm:max-w-none sm:text-xs sm:tracking-[0.24em]">Search smarter travel</p>
           </div>
         </Link>
