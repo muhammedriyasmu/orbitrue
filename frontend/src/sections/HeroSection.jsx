@@ -5,7 +5,7 @@ import AnimatedButton from '../components/AnimatedButton';
 import Reveal from '../components/Reveal';
 import TravelSearchWidget from '../components/search/TravelSearchWidget';
 import { defaultFlightSearch, defaultHotelSearch } from '../assets/mockData';
-import heroBackground from '../assets/uae_airplane_hq.png';
+import heroVideo from '../assets/14260310_2160_3840_30fps.mp4';
 
 function HeroSection() {
   const navigate = useNavigate();
@@ -22,11 +22,17 @@ function HeroSection() {
 
   return (
     <section id="home" className="relative overflow-hidden px-4 pb-16 pt-6 lg:px-8 lg:pb-24 lg:pt-12">
-      {/* Background Image Layer */}
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBackground})` }}
-      />
+      {/* Background Video Layer */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 z-0 h-full w-full object-cover object-[center_60%]"
+      >
+        {/* User-provided airplane takeoff video */}
+        <source src={heroVideo} type="video/mp4" />
+      </video>
       {/* Overlay to ensure text readability */}
       <div className="absolute inset-0 z-0 bg-white/60 bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.1),transparent_28%),radial-gradient(circle_at_top_right,rgba(14,165,233,0.05),transparent_24%),linear-gradient(180deg,rgba(255,255,255,0.1)_0%,rgba(240,250,255,0.4)_50%,rgba(255,255,255,0.8)_100%)]" />
       <motion.div
