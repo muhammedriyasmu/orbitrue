@@ -1,7 +1,8 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { Menu, Plane, Search, UserRound, X } from 'lucide-react';
+import { Menu, Search, UserRound, X } from 'lucide-react';
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import OrbitrueSealLogo from '../OrbitrueSealLogo';
 import useAuth from '../../hooks/useAuth';
 
 const links = [
@@ -21,9 +22,7 @@ function Navbar() {
     <header className="sticky top-0 z-40 border-b border-sky-100/80 bg-white/88 backdrop-blur-2xl">
       <div className="container-width flex h-20 items-center justify-between gap-3 sm:gap-4">
         <Link to="/" className="flex min-w-0 items-center gap-3">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-primary via-sky-400 to-secondary text-white shadow-[0_14px_35px_rgba(2,132,199,0.22)]">
-            <Plane size={20} />
-          </div>
+          <OrbitrueSealLogo compact />
           <div className="min-w-0">
             <p className="truncate text-lg font-semibold tracking-tight text-slate-900">Orbitrue Tours & Travels</p>
             <p className="max-w-[10rem] text-[10px] uppercase tracking-[0.18em] text-slate-500 sm:max-w-none sm:text-xs sm:tracking-[0.24em]">Search smarter travel</p>

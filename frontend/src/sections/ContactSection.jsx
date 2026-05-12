@@ -101,7 +101,7 @@ function ContactSection() {
             <div className="flex flex-wrap gap-6">
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5" />
-                <span className="text-sm">support@orbitrue.com</span>
+                <span className="text-sm">info@orbitrueuae.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <PhoneCall className="h-5 w-5" />

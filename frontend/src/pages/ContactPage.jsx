@@ -11,11 +11,11 @@ function ContactPage() {
         <div className="mt-8 grid gap-6 md:grid-cols-2">
           <div className="rounded-3xl border border-slate-200 bg-sky-50 p-5">
             <p className="text-sm uppercase tracking-[0.2em] text-sky-700">Email</p>
-            <p className="mt-3 text-lg text-slate-900">support@orbitrue.com</p>
+            <p className="mt-3 text-lg text-slate-900">info@orbitrueuae.com</p>
           </div>
           <div className="rounded-3xl border border-slate-200 bg-sky-50 p-5">
             <p className="text-sm uppercase tracking-[0.2em] text-sky-700">Phone</p>
-            <p className="mt-3 text-lg text-slate-900">+91 99999 99999</p>
+            <p className="mt-3 text-lg text-slate-900">+91 88916 47440</p>
           </div>
           <div className="rounded-3xl border border-slate-200 bg-sky-50 p-5">
             <p className="text-sm uppercase tracking-[0.2em] text-sky-700">Office Hours</p>

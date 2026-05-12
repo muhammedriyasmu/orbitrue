@@ -15,9 +15,9 @@ function Footer() {
             Browse flights, hotels, packages, and visa services through a polished interface designed to feel fast, airy, and trustworthy.
           </p>
           <div className="mt-5 space-y-2 text-sm text-slate-600">
-            <p className="flex items-center gap-2"><Phone size={16} /> +91 90000 12345</p>
-            <p className="flex items-center gap-2"><Mail size={16} /> hello@orbitrue.com</p>
-            <p className="flex items-center gap-2"><MapPin size={16} /> Kerala, India</p>
+            <p className="flex items-center gap-2"><Phone size={16} /> +91 88916 47440</p>
+            <p className="flex items-center gap-2"><Mail size={16} /> info@orbitrueuae.com</p>
+            <p className="flex items-center gap-2"><MapPin size={16} /> Chalissery, Kerala</p>
           </div>
         </div>
 

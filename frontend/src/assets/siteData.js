@@ -211,7 +211,7 @@ export const socialLinks = [
 ];
 
 export const contactHighlights = [
-  { title: 'Office', value: 'ORBITRUE Global Mobility Desk, Kerala', icon: Building2 },
-  { title: 'Reach us', value: 'support@orbitrue.com | +91 99999 99999', icon: MapPinned }
+  { title: 'Office', value: 'Chalissery, Kerala', icon: Building2 },
+  { title: 'Reach us', value: 'info@orbitrueuae.com | +91 88916 47440', icon: MapPinned }
 ];
 

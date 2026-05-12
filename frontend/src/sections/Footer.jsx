@@ -36,8 +36,8 @@ function Footer() {
               </a>
             ))}
           </div>
-          <p className="mt-6 text-sm text-slate-600">support@orbitrue.com</p>
-          <p className="mt-2 text-sm text-slate-600">+91 99999 99999</p>
+          <p className="mt-6 text-sm text-slate-600">info@orbitrueuae.com</p>
+          <p className="mt-2 text-sm text-slate-600">+91 88916 47440</p>
         </div>
       </div>
     </footer>

@@ -35,7 +35,7 @@ function EnquiryPage() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || '919999999999';
+    const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || '918891647440';
     const details = [
       'New ORBITRUE Enquiry',
       `Service: ${selectedServiceTitle}`,
